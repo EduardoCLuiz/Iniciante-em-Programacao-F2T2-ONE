@@ -1,0 +1,23 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(texto){
+		document.write(texto);
+		pulaLinha();
+	}
+
+	var limite = parseInt(prompt("Digite o ultimo numero:"));
+
+	while(limite > 1){
+		if (limite%2 == 0) {
+			mostra(limite);
+		}
+		limite = limite - 1
+	}
+	mostra("Fim")
+</script>
