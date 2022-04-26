@@ -1,0 +1,28 @@
+<meta charset="utf-8">
+
+<script type="text/javascript">
+	function pulaLinha(){
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var mult = (parseInt(prompt("Digite quantas vezes você quer que o numero seja multiplicado:")));
+	var num = (parseInt(prompt("Digite o numero a qual você deseja a tabuada:")));
+
+	for(var multiplicador = 1; multiplicador <= mult; multiplicador++){	
+		mostra(num + " * " + multiplicador + " = " + num * multiplicador)
+		//mostra(num * multiplicador);
+	}
+	//while(multiplicador <= 10){
+
+	//	mostra(7 * multiplicador);
+	//	multiplicador = multiplicador + 1;
+	//}
+
+	mostra("FIM")
+</script>
